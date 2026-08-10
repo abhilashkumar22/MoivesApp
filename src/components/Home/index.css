@@ -1,0 +1,130 @@
+.home-container {
+  background-color: #181818;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hero Section */
+.home-hero-container {
+  background-size: cover;
+  background-position: center top;
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home-hero-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(24, 24, 24, 0.2) 60%,
+    #181818 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.home-hero-plain {
+  background-color: #181818;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 100px 24px 60px 24px;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-content {
+    padding: 140px 60px 80px 60px;
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-content {
+    padding: 160px 112px 100px 112px;
+    max-width: 550px;
+  }
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+.hero-overview {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-overview {
+    font-size: 16px;
+  }
+}
+
+.play-button {
+  background-color: #ffffff;
+  color: #181818;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.play-button:hover {
+  opacity: 0.85;
+}
+
+/* Sections */
+.home-sections {
+  padding: 0 0 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 24px 12px 24px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section-heading {
+    font-size: 22px;
+    padding: 32px 60px 16px 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-heading {
+    font-size: 24px;
+    padding: 32px 112px 16px 112px;
+  }
+}

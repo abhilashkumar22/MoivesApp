@@ -1,0 +1,29 @@
+.image-style {
+  height: 150px;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .image-style {
+    height: 200px;
+    width: 260px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image-style {
+    height: 260px;
+    width: 350px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+}

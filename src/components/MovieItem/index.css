@@ -1,0 +1,42 @@
+.link-item {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.movie-icon-item {
+  list-style-type: none;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .movie-icon-item {
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+.movie-image {
+  height: 160px;
+  width: 210px;
+  border: none;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .movie-image {
+    height: 220px;
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .movie-image {
+    height: 260px;
+    width: 350px;
+  }
+}
